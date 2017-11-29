@@ -57,7 +57,7 @@ Seems like enabling **file_cache_only** will disable the **opcache_compile_file*
 
 ## Donate
 
-[17PHL7Rw9rHujmRHkkPQGspLQ7rsDFV574](bitcoin:17PHL7Rw9rHujmRHkkPQGspLQ7rsDFV574)
+<img src='donate.png' height='26' /> to **17PHL7Rw9rHujmRHkkPQGspLQ7rsDFV574**
 
 ## References
 
