@@ -1,14 +1,16 @@
 # OpCompiler
 How to use Zend OPCache functions to protect your PHP code.
-##Introduction
+
+## Introduction
+
 Up to PHP5.3 I used to encode PHP files with the [BCompiler](https://pecl.php.net/package/bcompiler). Inpired by [Bencoder](http://bencoder.urdada.net/) I have built my own scripts to encode and deploy.
 Now with PHP7.0 is possible again to achieve similar behavior.
 
-##Requirements
+## Requirements
 
 PHP7.0+
 
-##Setup
+## Setup
 Create a directory called */var/www/opcache_files* or whatever name.
 Create a file called */var/www/opcache_files/blacklist.txt*, here is possible to specify files to be ignored. [See details](http://php.net/manual/en/opcache.configuration.php#ini.opcache.blacklist-filename).
 Ensure OPCache is installed and enabled.
@@ -28,7 +30,7 @@ opcache.file_cache_only = 1
 opcache.validate_timestamps = 0
 opcache.enable_cli = 1
 ```
-##The Code
+## The Code
 ```php
 <?php
 $file = "/var/www/info.php";
@@ -51,11 +53,11 @@ Seems like enabling *file_cache_only* will disable the *opcache_compile_file* fu
 #php -d opcache.file_cache_only=0 encode_file.php
 ```
 
-##Donate
+## Donate
 
 <a href="bitcoin:17PHL7Rw9rHujmRHkkPQGspLQ7rsDFV574"><img src="https://raw.githubusercontent.com/ivanhennig/op-compiler/master/donate.png" alt="17PHL7Rw9rHujmRHkkPQGspLQ7rsDFV574" title="17PHL7Rw9rHujmRHkkPQGspLQ7rsDFV574"/></a>
 
-##References
+## References
 
 [BCompiler](https://pecl.php.net/package/bcompiler)
 [Bencoder](http://bencoder.urdada.net/)
